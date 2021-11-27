@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap');
+
+:root {
+    --dark: #2B2E4A;
+    --red: #E84545;
+    --darkred: #903749;
+    --grey: #53354A;
+}
+
+* {
+    font-family: 'M PLUS Code Latin', sans-serif; 
+}
+
+body {
+    background-color: var(--dark);
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+nav p {
+    font-size: 2em;
+    color: var(--red);
+    font-weight: bold;
+    padding: 15px;
+    margin: 15px;
+}
