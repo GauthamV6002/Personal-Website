@@ -7,17 +7,87 @@
     <title>Gautham V</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
 
 </head>
 <body>
-    <nav>
+    <nav class="fadeIn-1">
         <a href="index.html"><p>Home</p></a>
-        <a href="contact.html"><p>Contact</p></a>
         <a href="mywork.html"><p>My Work</p></a>
+        <a href="contact.html"><p>Contact</p></a>
     </nav>
+
+    <div class="main">
+        <div class="mainTxtDiv">
+            <p class="mainTxt fadeIn-2">Hi!</p>
+        </div>
+
+        <div class="buttonsDiv fadeIn-3" id="buttonsDiv"> 
+            <input type="button" value="Hi!" class="btn" id="btn0">
+            <input type="button" value="Hello?" class="btn" id="btn1">
+        </div>
+
+        <div class="bioDiv" id="bioDiv">
+            <div class="bioHeader">
+                <p class="exe">getBioOfGauthamV.exe</p>
+                <button id="bioRunBtn" class="bioRunBtn">Run</button>
+            </div>
+
+            <div class="bioRunOutput hovExapand" id="bioRunOutput">
+                <p>
+                    <!-- age == <span class="colP">15</span>
+                    <br>
+                    location == <span class="colG">Canada</span>.Alberta.Calgary
+                    <br>
+                    likes == [
+                    <span class="colGR">'coding🧑‍💻'</span>, 
+                    <span class="colGR">'robotics🤖'</span>, 
+                    <span class="colGR">'math🔢'</span>,
+                    <span class="colGR">'youtube▶️'</span>]
+                    <br>
+                    likes != <span class="colGR">'going outside🌲'</span>
+                    <br>
+                    lookingForAnInternship == <span class="colP">True</span> -->
+                </p>
+            </div>
+            <div class="bioRunOuputCards">
+                <div class="bioRunCardSkills hovExapand">
+                    <div class="vertLine"></div>
+                    <div class="bioOutputCardsTextDiv">
+                        <p class="bioOutputCardsTitle bioOutAllTxt">&lt;Studies&gt;</p>
+                        <p class="bioOutputCardstxt bioOutAllTxt">
+                            &emsp;&emsp;&lt;<span class="colB">CompSci</span> lvl=<span class="colGR">"med"</span>&gt; <br><br>
+                            &emsp;&emsp;&lt;<span class="colB">Math</span> lvl=<span class="colGR">"high"</span>&gt; <br><br>
+                            &emsp;&emsp;&lt;<span class="colB">Physics</span> lvl=<span class="colGR">"med"</span>&gt; <br><br>
+                            &emsp;&emsp;&lt;<span class="colB">French</span> lvl=<span class="colGR">"new"</span>&gt; <br>
+                        </p>
+                        <p class="bioOutputCardsTitleEnd bioOutAllTxt">&lt;/Studies&gt;</p>
+                    </div>
+                </div>
+
+                <div class="bioRunCardStudies hovExapand">
+                    <div class="vertLine"></div>
+                    <div class="bioOutputCardsTextDiv">
+                        <p class="bioOutputCardsTitle bioOutAllTxt">&lt;SomeOfMySkills&gt;</p>
+                        <p class="bioOutputCardstxt bioOutAllTxt">
+                            &emsp;&emsp;&lt;<span class="colB">HTML&CSS</span> years=<span class="colGR">"1"</span>&gt; <br><br>
+                            &emsp;&emsp;&lt;<span class="colB">Javasript</span> years=<span class="colGR">"1"</span>&gt; <br><br>
+                            &emsp;&emsp;&lt;<span class="colB">Python</span> years=<span class="colGR">"1.5"</span>&gt; <br><br>
+                            &emsp;&emsp;&lt;<span class="colB">GraphicDesign</span> years=<span class="colGR">"4"</span>&gt; <br>
+                        </p>
+                        <p class="bioOutputCardsTitleEnd bioOutAllTxt">&lt;/SomeOfMySkills&gt;</p>
+                    </div>
+                </div>
+            </div>
+            <a class="myworkA">
+                <p class="myWorkTrigger">My Work</p><div class="myWorkTriggerSeperator"></div><p class="myWorkTrigger"> >></p>
+            </a>
+        </div>
+
+
+    </div>
+
+
 </body>
 </html>
