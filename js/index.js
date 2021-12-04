@@ -69,12 +69,11 @@ const ansEx = (ans) => {
 
 //BIO EX
 
-bioRunBtn = $('#bioRunBtn');
-bioRunOutput = $('#bioRunOutput');
-bioRunOuputCards = $('.bioRunOuputCards');
-
-myWorkTrigger = $(".myWorkTrigger");
-myWorkTriggerSeperator = $(".myWorkTriggerSeperator");
+const bioRunBtn = $('#bioRunBtn');
+const bioRunOutput = $('#bioRunOutput');
+const bioRunOuputCards = $('.bioRunOuputCards');
+const myWorkTrigger = $(".myWorkTrigger");
+const myWorkTriggerSeperator = $(".myWorkTriggerSeperator");
 
 
 
@@ -112,8 +111,8 @@ $(document).ready(() => {
 
     bioRunBtn.click(() => {
         bioRunOutput.fadeIn();
-        str = '<p> age == <span class=\"colP\">15</span> <br> location == <span class=\"colG\">Canada.Alberta.Calgary</span> <br> likes == [ <span class=\"colGR\">\'coding🧑‍💻\'</span>,  <span class=\"colGR\">\'robotics🤖\'</span>,  <span class=\"colGR\">\'math🔢\'</span>, <span class=\"colGR\">\'youtube▶️\'</span>] <br> likes != <span class=\"colGR\">\'going outside🌲\'</span> <br> lookingForAnInternship == <span class=\"colP\">True';
-        typewriterSpeed = 10;
+        let str = '<p> age == <span class=\"colP\">15</span> <br> location == <span class=\"colG\">Canada.Alberta.Calgary</span> <br> likes == [ <span class=\"colGR\">\'coding🧑‍💻\'</span>,  <span class=\"colGR\">\'robotics🤖\'</span>,  <span class=\"colGR\">\'math🔢\'</span>, <span class=\"colGR\">\'youtube▶️\'</span>] <br> likes != <span class=\"colGR\">\'going outside🌲\'</span> <br> lookingForAnInternship == <span class=\"colP\">True';
+        const typewriterSpeed = 10;
         typewriter(str, bioRunOutput, typewriterSpeed);
         $(".vertLine").height('0px');
         $(".bioOutAllTxt").hide();

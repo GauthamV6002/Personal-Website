@@ -73,3 +73,26 @@ nav p:hover {
 .hovExapand:hover {
     transform: scale(1.05);
 }
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tipi {
+
+}
+
+.astrodome {
+
+}
+
+.this {
+    font-size: 5rem;
+    color: white;
+    text-shadow: 5px 5px black, -5px -5px black;
+}
+
+.this:hover {
+    text-shadow: 8px 8px black, -8px -8px black;
+}
