@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap');
+
+:root {
+    --dark: #252A34;
+    --white: #EAEAEA;
+    --red: #FF2E63;
+    --blue: #08D9D6;
+}
+
+.colP { color: purple }
+.colG { color: green }
+.colGR { color: goldenrod }
+.colB { color: var(--blue) }
+
+* {
+    font-family: 'M PLUS Code Latin', sans-serif; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        transform: 100%;
+    }
+}
+
+.fadeIn-1 { animation: fadeIn 500ms ease-in-out }
+.fadeIn-2 { animation: fadeIn 1000ms ease-in-out }
+.fadeIn-3 { animation: fadeIn 1500ms ease-in-out }
+
+body {
+    background-color: var(--dark);
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+nav a p {
+    font-size: 2em;
+    color: var(--white);
+    font-weight: bold;
+    padding: 15px;
+    margin: 15px;
+    transition: 200ms ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav p:hover {
+    font-weight: bolder;
+    transform: scale(1.1) rotate(5deg);
+    cursor: pointer;
+    color: goldenrod;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hovExapand {
+    transition: 200ms ease-in-out;
+}
+
+.hovExapand:hover {
+    transform: scale(1.05);
+}

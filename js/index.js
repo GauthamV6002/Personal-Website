@@ -89,6 +89,7 @@ $(document).ready(() => {
     });
     
 
+    //BIO EX
     myWorkTrigger.hover(() => { 
         myWorkTriggerSeperator.width('12px');
         myWorkTrigger.css({color:"goldenrod", cursor: 'pointer'});
@@ -97,8 +98,18 @@ $(document).ready(() => {
         myWorkTrigger.css({color:"#FF2E63", cursor: 'default'});
     });
 
+    $(".myworkA").click(() => {
+        $(".myworkA").fadeOut(250);
+        bioRunOuputCards.fadeOut(500);
+        bioRunOutput.fadeOut(750);
+        $(".bioHeader").fadeOut(1000);
+        $(".bioDiv").fadeOut(1200);
+        setTimeout(() => {window.location.href = "mywork.html"}, 1450);
+        
 
-    //BIO EX
+
+    });
+
     bioRunBtn.click(() => {
         bioRunOutput.fadeIn();
         str = '<p> age == <span class=\"colP\">15</span> <br> location == <span class=\"colG\">Canada.Alberta.Calgary</span> <br> likes == [ <span class=\"colGR\">\'coding🧑‍💻\'</span>,  <span class=\"colGR\">\'robotics🤖\'</span>,  <span class=\"colGR\">\'math🔢\'</span>, <span class=\"colGR\">\'youtube▶️\'</span>] <br> likes != <span class=\"colGR\">\'going outside🌲\'</span> <br> lookingForAnInternship == <span class=\"colP\">True';

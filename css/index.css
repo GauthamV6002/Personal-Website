@@ -66,6 +66,15 @@ nav p:hover {
     align-items: center;
 }
 
+.hovExapand {
+    transition: 200ms ease-in-out;
+}
+
+.hovExapand:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 5px 5px 5px rgba(46, 46, 46, 0.5);   
+}
+
 .mainTxtDiv {
     margin-left: 20px;
 }
@@ -154,7 +163,7 @@ nav p:hover {
 
 .bioRunOutput {
     background-color: rgb(26, 26, 26);
-    border: 5px solid var(--white);
+    padding: 5px;
     border-radius: 15px;
     margin: 15px 30px;
 }
@@ -205,14 +214,6 @@ nav p:hover {
 .bioOutputCardsTitleEnd {
     font-size: 1.5em;
     color: var(--red);
-}
-
-.hovExapand {
-    transition: 200ms ease-in-out;
-}
-
-.hovExapand:hover {
-    transform: scale(1.05);
 }
 
 .myworkA {
