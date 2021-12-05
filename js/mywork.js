@@ -11,6 +11,8 @@ const clickerReveals = [revealTipi, revealAstrodome, revealThis];
 let clickersClicks = [0, 0, 0];
 const clickThreshold = 5;
 
+const nextBtn = $(".nextBtn");
+
 const setImg = (clicker, shouldFade) => {
     if(shouldFade){
         clickers.map(c => {
@@ -55,10 +57,11 @@ $(document).ready(() => {
     revealTipi.hide();
     revealAstrodome.hide();
     revealThis.hide();
+    nextBtn.hide();
 
     setImg(tipi, false);
     clickers.map(x => {
-        x.click(() => {clickerOnClick(x)});
+        x.click(() => { clickerOnClick(x) });
     });
 
 });
