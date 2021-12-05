@@ -11,9 +11,11 @@
 .colG { color: green }
 .colGR { color: goldenrod }
 .colB { color: var(--blue) }
+.colR { color: var(--red) }
 
 * {
     font-family: 'M PLUS Code Latin', sans-serif; 
+    color: var(--white);
 }
 
 @keyframes fadeIn {
@@ -55,44 +57,118 @@ nav p:hover {
     font-weight: bolder;
     transform: scale(1.1) rotate(5deg);
     cursor: pointer;
-    color: goldenrod;
+    color: rgb(190, 179, 149);
 }
-
 
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 15vh;
 }
 
-.hovExapand {
+.hovExpand {
     transition: 200ms ease-in-out;
 }
 
-.hovExapand:hover {
-    transform: scale(1.05);
+.hovExpand:hover {
+    transform: scale(1.1);
+    letter-spacing: 0.1ch;
 }
 
-.main {
+.clickerDiv {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.tipi {
 
+.tipi {
+    width: 20%;
+    transform: rotate(-20deg);
+    transition: 100ms ease-in-out;
+}
+
+.tipi:hover {
+    transform: scale(1.1) rotate(-10deg);
+    cursor: pointer;
 }
 
 .astrodome {
+    width: 30%;
+    transform: rotate(-20deg);
+    transition: 100ms ease-in-out;
+}
 
+.astrodome:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(-10deg);
 }
 
 .this {
     font-size: 5rem;
-    color: white;
-    text-shadow: 5px 5px black, -5px -5px black;
+    color: var(--blue);
+    text-shadow: 3px 3px var(--red);
+    transform: rotate(-20deg);
+
+    transition: 100ms ease-in-out;
 }
 
 .this:hover {
-    text-shadow: 8px 8px black, -8px -8px black;
+    text-shadow: 8px 8px var(--red);
+    transform: translate(-4px, -4px) rotate(-10deg);
+}
+
+.revealTipi, .revealAstrodome, .revealThis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.revealTitle {
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.revealTitleA {
+    text-decoration: none;
+}
+
+.revealTitle:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.revealdescription {
+    width: 65ch;
+    text-align: center;
+}
+
+.revealTechUsedTitle {
+    font-size: 1.5rem;
+    color: goldenrod;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+
+    text-decoration: underline wavy var(--blue);
+}
+
+
+.revealTechUsed li {
+    margin: 5px;
+    text-align: center;
+    list-style-type: circle;
+}
+
+.revealTechUsed li:nth-child(even) {
+    color: white;
+}
+
+.revealTechUsed li:nth-child(odd) {
+    color: var(--red);
+}
+
+.revealAstrodomeImage {
+    width: 50%;
+    border-radius: 5px;
+    margin: 1rem;
 }
