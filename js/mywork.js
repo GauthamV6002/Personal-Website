@@ -41,26 +41,11 @@ const clickerOnClick = (obj) => {
     }
 }
 
-const gradualReveal = (div, interval) => {
-    const children = div.children();
-    let revealTimer = 0;
-
-    console.log(children);
-    console.log(children[0]);
-    children[0].fadeOut();
-
-
-    for(let i = 0; i < children.length; i++){
-        // setTimeout(() => {children[i].fadeOut()}, i * interval);
-    }
-}
-
 const clickerReveal = (obj) => {
-    obj.animate({width: "0"}, 100, 'swing');
+    obj.animate({width: "0"}, 100, 'swing', () => {
+        clickerReveals[clickers.indexOf(obj)].fadeIn(400);
+    });
     setTimeout(() => { obj.hide() }, 200);
-
-    //Show reveal
-    gradualReveal(clickerReveals[clickers.indexOf(obj)], 200);
     
 }
 
