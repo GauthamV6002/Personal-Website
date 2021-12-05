@@ -12,6 +12,7 @@
 .colGR { color: goldenrod }
 .colB { color: var(--blue) }
 .colR { color: var(--red) }
+.colDB { color: darkblue }
 
 * {
     font-family: 'M PLUS Code Latin', sans-serif; 

@@ -46,9 +46,10 @@ const clickerOnClick = (obj) => {
 const clickerReveal = (obj) => {
     obj.animate({width: "0"}, 100, 'swing', () => {
         clickerReveals[clickers.indexOf(obj)].fadeIn(400);
+        nextBtn.fadeIn(400);
     });
     setTimeout(() => { obj.hide() }, 200);
-    
+
 }
 
 $(document).ready(() => {
@@ -62,6 +63,17 @@ $(document).ready(() => {
     setImg(tipi, false);
     clickers.map(x => {
         x.click(() => { clickerOnClick(x) });
+    });
+
+    //NextBtn
+    nextBtn.click(() => {
+
+        revealTipi.hide();
+        revealAstrodome.hide();
+
+        //Element to be shown is first element without any clicks
+        clickers[clickersClicks.findIndex(x => x === 0)].fadeIn();
+        nextBtn.fadeOut();
     });
 
 });
