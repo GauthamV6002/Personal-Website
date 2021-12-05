@@ -103,7 +103,7 @@ $(document).ready(() => {
         bioRunOutput.fadeOut(750);
         $(".bioHeader").fadeOut(1000);
         $(".bioDiv").fadeOut(1200);
-        setTimeout(() => {window.location.href = "mywork.html"}, 1450);
+        setTimeout(() => {window.location.href = "./html/mywork.html"}, 1450);
         
 
 
