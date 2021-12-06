@@ -58,7 +58,7 @@ nav p:hover {
     font-weight: bolder;
     transform: scale(1.1) rotate(5deg);
     cursor: pointer;
-    color: rgb(190, 179, 149);
+    color: goldenrod;
 }
 
 .main {

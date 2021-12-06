@@ -58,5 +58,61 @@ nav p:hover {
     font-weight: bolder;
     transform: scale(1.1) rotate(5deg);
     cursor: pointer;
-    color: rgb(190, 179, 149);
+    color: goldenrod;
+}
+
+.contactMainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lets-get-in-touch {
+    color: var(--red);
+    font-size: 6rem;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 4rem;
+}
+
+i {
+    color: var(--blue);
+    font-size: 4em;
+    transition: 200ms ease-in-out;
+
+    margin: 3rem;
+}
+
+.contactMainDiv a {
+    text-decoration: none;
+}
+
+i:hover {
+    transform: scale(1.1) rotate(10deg);
+    color: goldenrod
+}
+
+[tool-tip]::after {
+    position: relative;
+    font-family: 'M PLUS Code Latin', sans-serif; 
+    content: attr(tool-tip);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 1.5rem;
+
+    opacity: 0;
+    transition: 200ms ease-in-out;
+}
+
+[tool-tip]:hover::after {
+    bottom: 2.5rem;
+    opacity: 100;
 }
