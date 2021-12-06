@@ -22,15 +22,21 @@
 @keyframes fadeIn {
     from {
         opacity: 0%;
+        transform: translate(0, 4rem);
     }
     to {
         transform: 100%;
+        transform: translate(0, 0);
     }
 }
 
-.fadeIn-1 { animation: fadeIn 500ms ease-in-out }
+.fadeIn-1 { animation: fadeIn 500ms  ease-in-out }
 .fadeIn-2 { animation: fadeIn 1000ms ease-in-out }
 .fadeIn-3 { animation: fadeIn 1500ms ease-in-out }
+.fadeIn-4 { animation: fadeIn 2000ms ease-in-out }
+.fadeIn-5 { animation: fadeIn 2500ms ease-in-out }
+.fadeIn-6 { animation: fadeIn 3000ms ease-in-out }
+
 
 body {
     background-color: var(--dark);
