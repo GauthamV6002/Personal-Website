@@ -50,8 +50,9 @@ const clickerReveal = (obj) => {
     obj.animate({width: "0"}, 100, 'swing', () => {
         clickerReveals[clickers.indexOf(obj)].fadeIn(400);
         nextBtn.fadeIn(400);
+
         if(currentObjIndex === 2){
-            nextBtn.val('Contact >>');
+            nextBtn.html('Contact >>');
         }
     });
     setTimeout(() => { obj.hide() }, 200);
@@ -61,11 +62,12 @@ const clickerReveal = (obj) => {
     } else if (currentObjIndex === 2) {
         unlockedTxt.html('<span class="colGR">Mywork</span>.PersonalWebsite.unlocked == <span class="colP">True</span>');
     }
-
+    unlockedTxt.show();
     unlockedTxt.css("animation", "cut 2s ease-in-out");
     setTimeout(() => {
+        unlockedTxt.hide();
         unlockedTxt.css("animation", "none");
-    }, 2500);
+    }, 1500);
 
 
 

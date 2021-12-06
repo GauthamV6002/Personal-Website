@@ -187,7 +187,7 @@ nav p:hover {
     transition: 200ms ease-in-out;
     font-size: 2rem;
     margin: 1rem auto;
-    width: 10%;
+    width: 15%;
 }
 
 .nextBtn:hover {
@@ -198,7 +198,7 @@ nav p:hover {
 }
 
 .unlocked {
-    position: absolute;
+    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,8 +236,6 @@ nav p:hover {
         background-color: rgb(26, 26, 26);
         color: var(--white);
     }
-
-
 }
 
 .unlockedTxt {
