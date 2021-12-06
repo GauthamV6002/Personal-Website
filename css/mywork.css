@@ -62,7 +62,6 @@ nav p:hover {
 }
 
 .main {
-    margin-top: 15vh;
 }
 
 .hovExpand {
@@ -75,12 +74,16 @@ nav p:hover {
 }
 
 .clickerDiv {
+    
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .tipi {
+    margin-top: 15vh;
+
     width: 20%;
     transform: rotate(-20deg);
     transition: 100ms ease-in-out;
@@ -92,6 +95,8 @@ nav p:hover {
 }
 
 .astrodome {
+    margin-top: 15vh;
+
     width: 30%;
     transform: rotate(-20deg);
     transition: 100ms ease-in-out;
@@ -103,6 +108,8 @@ nav p:hover {
 }
 
 .this {
+    margin-top: 15vh;
+
     font-size: 5rem;
     color: var(--blue);
     text-shadow: 3px 3px var(--red);
@@ -128,6 +135,7 @@ nav p:hover {
     font-weight: bold;
     text-align: center;
     font-size: 3rem;
+    margin-top: 0.5rem;
 }
 
 .revealTitleA {
@@ -147,7 +155,7 @@ nav p:hover {
 .revealTechUsedTitle {
     font-size: 1.5rem;
     color: goldenrod;
-    margin: 30px 0px 0px 0px;
+    margin: 0.5rem 0 0 0;
     text-align: center;
 
     text-decoration: underline wavy var(--blue);
@@ -178,11 +186,67 @@ nav p:hover {
     text-align: center;
     transition: 200ms ease-in-out;
     font-size: 2rem;
-    margin: 4rem auto;
+    margin: 1rem auto;
     width: 10%;
 }
 
 .nextBtn:hover {
     color: goldenrod;
     letter-spacing: 0.3rem;
+    
+    cursor: pointer;
 }
+
+.unlocked {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+@keyframes cut {
+    from {
+        opacity: 0;
+        transform: none;
+        border: 5px solid var(--red);
+
+        background-color: var(--dark);
+        color: var(--dark);
+    }
+
+    25% {
+        opacity: 100%;
+        transform: translate(-5px, -5px);
+        border: 5px solid var(--red);
+
+        background-color: rgb(26, 26, 26);
+        color: var(--white);
+    }
+
+    75% {
+        opacity: 100%;
+        transform: translate(-5px, -5px);
+        border: 5px solid var(--red);
+
+        background-color: rgb(26, 26, 26);
+        color: var(--white);
+    }
+
+
+}
+
+.unlockedTxt {
+    transition: 200ms ease-in-out;
+
+    opacity: 0;
+
+    animation: none;
+    border-radius: 8px;
+    padding: 0.75rem 5%;
+}
+
