@@ -56,6 +56,7 @@ const clickerReveal = (obj) => {
         }
     });
     setTimeout(() => { obj.hide() }, 200);
+    $(".clickMe").fadeOut(200);
 
     if(currentObjIndex === 1){
         unlockedTxt.html('<span class="colGR">Mywork</span>.Astrodome.unlocked == <span class="colP">True</span>');
@@ -72,6 +73,8 @@ const clickerReveal = (obj) => {
 
 
 
+
+
 }
 
 $(document).ready(() => {
@@ -81,17 +84,25 @@ $(document).ready(() => {
     revealAstrodome.hide();
     revealThis.hide();
     nextBtn.hide();
+    $(".clickMe").hide();
 
     setImg(tipi, false);
     clickers.map(x => {
         x.click(() => { clickerOnClick(x) });
     });
 
+    setTimeout(() => {
+        if(clickersClicks[currentObjIndex] === 0){
+            $(".clickMe").fadeIn();
+        }
+    }, 3500);
+
     //NextBtn
     nextBtn.click(() => {
 
         if(currentObjIndex === 2){
             window.location.href = "./contact.html";
+            return;
         }
 
         currentObjIndex++;
@@ -101,6 +112,12 @@ $(document).ready(() => {
 
         nextBtn.fadeOut();
         clickers[currentObjIndex].fadeIn();
+
+        setTimeout(() => {
+            if(clickersClicks[currentObjIndex] === 0){
+                $(".clickMe").fadeIn();
+            }
+        }, 3500);
     });
 
 });

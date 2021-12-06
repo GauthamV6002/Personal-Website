@@ -74,9 +74,8 @@ nav p:hover {
 }
 
 .clickerDiv {
-    
-
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -121,6 +120,11 @@ nav p:hover {
 .this:hover {
     text-shadow: 8px 8px var(--red);
     transform: translate(-4px, -4px) rotate(-10deg);
+}
+
+.clickMe {
+    color: var(--red);
+    font-size: 3rem;
 }
 
 .revealTipi, .revealAstrodome, .revealThis {
