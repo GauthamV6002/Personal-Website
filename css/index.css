@@ -38,6 +38,19 @@ nav {
     justify-content: end;
 }
 
+@media (max-width: 950px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: none;
+    }
+}
+
 nav a p {
     font-size: 2em;
     color: var(--white);
@@ -58,12 +71,14 @@ nav p:hover {
     color: goldenrod;
 }
 
+/*  */
 
 .main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .hovExapand {
@@ -80,10 +95,15 @@ nav p:hover {
 }
 
 .mainTxt {
-    font-size: 7em;
+    font-size: 7rem;
     color: var(--red);
     text-align: center;
 }
+
+@media (max-width: 1400px) {.mainTxt {font-size: 6rem;}}
+@media (max-width: 1230px) {.mainTxt {font-size: 5rem;}}
+@media (max-width: 750px) {.mainTxt {font-size: 4rem;}}
+@media (max-width: 450px) {.mainTxt {font-size: 3rem;}}
 
 .ansDiv {
     margin-left: 20px;
@@ -121,9 +141,27 @@ nav p:hover {
     cursor: hover;
 }
 
+@media (max-width: 525px) {
+    .btn {
+        padding: 15px 25px;
+        margin: 10px;
+    }
+
+    .btn[value] { font-size: 0.5rem;}
+}
+
+@media (max-width: 450px) {
+    .btn {
+        padding: 10px 15px;
+        margin: 10px;
+    }
+
+    .btn[value] { font-size: 0.25rem;}
+}
+
 .btn[value] {
     font-family: 'Oxygen', monospace, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 .bioDiv {
@@ -201,6 +239,21 @@ nav p:hover {
     padding: 15px;
 }
 
+@media (max-width: 1100px) {
+    .bioRunOuputCards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .bioRunCardSkills, .bioRunCardStudies {
+        padding-left: 5%;
+        padding-right: 15%;
+        text-align: left;
+    }
+}
+
 .bioOutputCardsTitle {
     font-size: 2em;
     color: var(--red);
@@ -214,6 +267,11 @@ nav p:hover {
 .bioOutputCardsTitleEnd {
     font-size: 1.5em;
     color: var(--red);
+}
+
+@media (max-width: 820px){
+    .bioOutputCardsTitle { display: none;}
+    .bioOutputCardsTitleEnd { display: none; }
 }
 
 .myworkA {

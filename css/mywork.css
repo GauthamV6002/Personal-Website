@@ -61,9 +61,6 @@ nav p:hover {
     color: goldenrod;
 }
 
-.main {
-}
-
 .hovExpand {
     transition: 200ms ease-in-out;
 }
