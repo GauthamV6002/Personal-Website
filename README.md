@@ -6,6 +6,7 @@ Link: https://gauthamv6002.github.io/Personal-Website/
 - HTML/CSS
 - Javascript
 - JQuery
+
 Bully me about not using a framework all you'd like, I'm too lazy to use react
    
 ### ❓ Why I made it:
