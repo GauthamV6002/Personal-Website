@@ -108,10 +108,14 @@ $(document).ready(() => {
 
 
     });
+    
+    // I really need to make a new website
+    // This is horrendous :skull:
+   
 
     bioRunBtn.click(() => {
         bioRunOutput.fadeIn();
-        let str = '<p> age == <span class=\"colP\">15</span> <br> location == <span class=\"colG\">Canada.Alberta.Calgary</span> <br> likes == [ <span class=\"colGR\">\'coding🧑‍💻\'</span>,  <span class=\"colGR\">\'robotics🤖\'</span>,  <span class=\"colGR\">\'math🔢\'</span>, <span class=\"colGR\">\'youtube▶️\'</span>] <br> likes != <span class=\"colGR\">\'going outside🌲\'</span> <br> lookingForAnInternship == <span class=\"colP\">True';
+        let str = '<p> age == <span class=\"colP\">17</span> <br> location == <span class=\"colG\">Canada.Alberta.Calgary</span> <br> likes == [ <span class=\"colGR\">\'coding🧑‍💻\'</span>,  <span class=\"colGR\">\'robotics🤖\'</span>,  <span class=\"colGR\">\'math🔢\'</span>, <span class=\"colGR\">\'youtube▶️\'</span>] <br> likes != <span class=\"colGR\">\'going outside🌲\'</span> <br> lookingForAnInternship == <span class=\"colP\">True';
         const typewriterSpeed = 10;
         typewriter(str, bioRunOutput, typewriterSpeed);
         $(".vertLine").height('0px');
